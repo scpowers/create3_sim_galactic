@@ -46,7 +46,8 @@ mkdir -p ~/create3_ws/src
 ```bash
 cd ~/create3_ws
 sudo apt-get update
-rosdep install --from-path src -yi
+rosdep update --include-eol-distros
+rosdep install --from-path src -yi --rosdistro=galactic
 ```
 
 - Build the workspace with:

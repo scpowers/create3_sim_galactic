@@ -110,6 +110,7 @@ def generate_launch_description():
         launch_arguments=[
             ('ign_args', [LaunchConfiguration('world'),
                           '.sdf',
+                          ' --force-version 5',
                           ' -v 4',
                           ' --gui-config ',
                           PathJoinSubstitution([pkg_irobot_create_ignition_bringup,
